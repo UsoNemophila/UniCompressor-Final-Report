@@ -1,0 +1,36 @@
+timestamp,version,notes,file_name,orig_size_bytes,comp_size_bytes,comp_time_ms,decomp_time_ms,comp_ratio,space_saving_pct,comp_throughput_mbs,decomp_throughput_mbs,verification
+2026-06-02 19:12:09,v1_base,"Initial version: Delta + LZ77(3000,255) + Huffman (Pickle tree)",test1.txt,35,1422,0.18,0.09,0.02,-3962.86,0.19,0.39,PASS
+2026-06-02 19:12:09,v1_base,"Initial version: Delta + LZ77(3000,255) + Huffman (Pickle tree)",test2.txt,2638,7951,5.91,3.53,0.33,-201.4,0.43,0.71,PASS
+2026-06-02 19:12:09,v1_base,"Initial version: Delta + LZ77(3000,255) + Huffman (Pickle tree)",test3.txt,5349,10865,7.01,6.81,0.49,-103.12,0.73,0.75,PASS
+2026-06-02 19:12:09,v1_base,"Initial version: Delta + LZ77(3000,255) + Huffman (Pickle tree)",Lenna.bmp,263224,225308,482.3,415.34,1.17,14.4,0.52,0.6,PASS
+2026-06-02 19:12:09,v1_base,"Initial version: Delta + LZ77(3000,255) + Huffman (Pickle tree)",Cameraman.bmp,66616,68288,100.45,109.38,0.98,-2.51,0.63,0.58,PASS
+2026-06-07 14:17:29,v2_base,Version 2: Canonical Huffman and optimized 264-byte fixed headers.,test1.txt,35,286,0.12,0.06,0.12,-717.14,0.29,0.52,PASS
+2026-06-07 14:17:29,v2_base,Version 2: Canonical Huffman and optimized 264-byte fixed headers.,test2.txt,2638,1992,2.29,2.48,1.32,24.49,1.1,1.01,PASS
+2026-06-07 14:17:29,v2_base,Version 2: Canonical Huffman and optimized 264-byte fixed headers.,test3.txt,5349,3865,4.59,5.25,1.38,27.74,1.11,0.97,PASS
+2026-06-07 14:17:29,v2_base,Version 2: Canonical Huffman and optimized 264-byte fixed headers.,Lenna.bmp,263224,213741,298.02,313.32,1.23,18.8,0.84,0.8,PASS
+2026-06-07 14:17:29,v2_base,Version 2: Canonical Huffman and optimized 264-byte fixed headers.,Cameraman.bmp,66616,56775,70.67,77.0,1.17,14.77,0.9,0.83,PASS
+2026-06-10 23:13:00,v3_two_tree,Version 3: Multi-stage pipeline upgraded to dual discrete Canonical Huffman Trees (Literal/Length and Distance) featuring tail-truncated headers.,test1.txt,35,290,0.41,0.21,0.12,-728.57,0.08,0.16,PASS
+2026-06-10 23:13:00,v3_two_tree,Version 3: Multi-stage pipeline upgraded to dual discrete Canonical Huffman Trees (Literal/Length and Distance) featuring tail-truncated headers.,test2.txt,2638,3954,2.91,3.02,0.67,-49.89,0.86,0.83,PASS
+2026-06-10 23:13:00,v3_two_tree,Version 3: Multi-stage pipeline upgraded to dual discrete Canonical Huffman Trees (Literal/Length and Distance) featuring tail-truncated headers.,test3.txt,5349,6252,5.6,5.69,0.86,-16.88,0.91,0.9,PASS
+2026-06-10 23:13:00,v3_two_tree,Version 3: Multi-stage pipeline upgraded to dual discrete Canonical Huffman Trees (Literal/Length and Distance) featuring tail-truncated headers.,Lenna.bmp,263224,182922,281.5,322.21,1.44,30.51,0.89,0.78,PASS
+2026-06-10 23:13:00,v3_two_tree,Version 3: Multi-stage pipeline upgraded to dual discrete Canonical Huffman Trees (Literal/Length and Distance) featuring tail-truncated headers.,Cameraman.bmp,66616,48647,74.31,82.73,1.37,26.97,0.85,0.77,PASS
+2026-06-21 13:09:20,v4_dynamic_optimized,Version 4: Optimized pipeline architecture featuring adaptive tree selection.,test1.txt,35,287,0.42,0.1,0.12,-720.0,0.08,0.33,PASS
+2026-06-21 13:09:20,v4_dynamic_optimized,Version 4: Optimized pipeline architecture featuring adaptive tree selection.,test2.txt,2638,1993,3.57,2.92,1.32,24.45,0.71,0.86,PASS
+2026-06-21 13:09:20,v4_dynamic_optimized,Version 4: Optimized pipeline architecture featuring adaptive tree selection.,test3.txt,5349,3866,6.59,5.47,1.38,27.72,0.77,0.93,PASS
+2026-06-21 13:09:20,v4_dynamic_optimized,Version 4: Optimized pipeline architecture featuring adaptive tree selection.,Lenna.bmp,263224,182923,330.18,324.07,1.44,30.51,0.76,0.77,PASS
+2026-06-21 13:09:20,v4_dynamic_optimized,Version 4: Optimized pipeline architecture featuring adaptive tree selection.,Cameraman.bmp,66616,48648,82.12,88.49,1.37,26.97,0.77,0.72,PASS
+2026-06-23 11:31:03,v5_final,Version 5: Implemented Trinary Branching Mechanism with a new Stored Mode to prevent micro-payload byte-size expansion bugs.,test1.txt,35,42,0.29,0.0,0.83,-20.0,0.11,32.09,PASS
+2026-06-23 11:31:03,v5_final,Version 5: Implemented Trinary Branching Mechanism with a new Stored Mode to prevent micro-payload byte-size expansion bugs.,test2.txt,2638,1993,3.52,2.77,1.32,24.45,0.71,0.91,PASS
+2026-06-23 11:31:03,v5_final,Version 5: Implemented Trinary Branching Mechanism with a new Stored Mode to prevent micro-payload byte-size expansion bugs.,test3.txt,5349,3866,6.23,5.23,1.38,27.72,0.82,0.98,PASS
+2026-06-23 11:31:03,v5_final,Version 5: Implemented Trinary Branching Mechanism with a new Stored Mode to prevent micro-payload byte-size expansion bugs.,Lenna.bmp,263224,182923,308.45,314.75,1.44,30.51,0.81,0.8,PASS
+2026-06-23 11:31:03,v5_final,Version 5: Implemented Trinary Branching Mechanism with a new Stored Mode to prevent micro-payload byte-size expansion bugs.,Cameraman.bmp,66616,48648,79.67,86.8,1.37,26.97,0.8,0.73,PASS
+2026-06-23 13:24:26,v6_interval_optimized,"Version 6: Introduced exponential Distance Slots mapping to truncate Tree B dimensions to 30 symbols, reducing header footprint by 99%.",test1.txt,35,42,0.28,0.0,0.83,-20.0,0.12,24.19,PASS
+2026-06-23 13:24:26,v6_interval_optimized,"Version 6: Introduced exponential Distance Slots mapping to truncate Tree B dimensions to 30 symbols, reducing header footprint by 99%.",test2.txt,2638,1790,3.42,2.45,1.47,32.15,0.74,1.03,PASS
+2026-06-23 13:24:26,v6_interval_optimized,"Version 6: Introduced exponential Distance Slots mapping to truncate Tree B dimensions to 30 symbols, reducing header footprint by 99%.",test3.txt,5349,3446,13.66,4.87,1.55,35.58,0.37,1.05,PASS
+2026-06-23 13:24:26,v6_interval_optimized,"Version 6: Introduced exponential Distance Slots mapping to truncate Tree B dimensions to 30 symbols, reducing header footprint by 99%.",Lenna.bmp,263224,180678,345.29,274.4,1.46,31.36,0.73,0.91,PASS
+2026-06-23 13:24:26,v6_interval_optimized,"Version 6: Introduced exponential Distance Slots mapping to truncate Tree B dimensions to 30 symbols, reducing header footprint by 99%.",Cameraman.bmp,66616,46024,79.47,70.51,1.45,30.91,0.8,0.9,PASS
+2026-06-23 14:17:25,v7,Version 7,test1.txt,35,42,0.37,0.0,0.83,-20.0,0.09,18.34,PASS
+2026-06-23 14:17:25,v7,Version 7,test2.txt,2638,1710,5.68,2.65,1.54,35.18,0.44,0.95,PASS
+2026-06-23 14:17:25,v7,Version 7,test3.txt,5349,3271,6.72,4.7,1.64,38.85,0.76,1.09,PASS
+2026-06-23 14:17:25,v7,Version 7,Lenna.bmp,263224,178994,620.11,325.21,1.47,32.0,0.4,0.77,PASS
+2026-06-23 14:17:25,v7,Version 7,Cameraman.bmp,66616,44308,131.59,71.91,1.5,33.49,0.48,0.88,PASS
